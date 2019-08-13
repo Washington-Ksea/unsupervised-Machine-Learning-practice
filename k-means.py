@@ -1,3 +1,8 @@
+"""
+欠点
+    Kがわからない
+    局所最小
+"""
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -42,7 +47,7 @@ def k_means(X, K, max_iter=20, beta=1.0):
         if i > 0:
             if np.abs(costs[i] - costs[i - 1]) < 0.1:
                 break
-    
+    """
     plt.figure()
     plt.plot(costs)
     plt.title("Costs")
@@ -54,7 +59,7 @@ def k_means(X, K, max_iter=20, beta=1.0):
     plt.scatter(X[:, 0], X[:, 1], c=colors)
     plt.savefig("./fig/k-means3")
 
-
+    """
 
 
 def main():
